@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Online Voting System-registration</title>
+        <link rel="stylesheet" href="../css/stylesheet.css">
+    </head>
+    <body>
+        <div class="container" >
+        <center>
+        <style>
+            #address{
+                width: 45%;
+                padding: 10px;
+            }
+            #image{
+                border: 2px solid black;
+                border-radius: 2px;
+                padding: 10px;
+                width: 30%;
+            }
+            #rol{
+                padding: 15px;
+        border-radius: 5px;
+        width:15%;
+            }
+            
+        </style>
+        <h1>Online Voting System</h1>
+    <hr>
+    <h2>Register</h2>
+
+    <form action="../api/register.php" method="post" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Enter name" required>
+            <input type="email" name="email" placeholder="Enter email" required><br><br>
+            <input type="password" name="password" placeholder="Password" minlength="6" required>
+            <input type="Password" name="cpassword" placeholder="Conform Password" minlength="6" required><br><br>
+            <input type="address" type="text" name="address" placeholder="Address" required><br><br>
+            <div id="image">
+                Upload image: <input type="file" name="photo" > 
+            </div> <br><br>
+           <select name="role" id="rol">
+            <option value="1">voter</option>
+            <option value="2">Candidate</option>
+            </select>
+           <br><br>
+            <button style=" padding: 10px;
+            border-radius: 5px;
+            background-color: blue;
+            color: whitesmoke;">Register</button><br><br>
+            Registerde?  <a href="../index.html">Login</a>
+        </form>
+    </center>
+    </div>
+    </body>
+</html>

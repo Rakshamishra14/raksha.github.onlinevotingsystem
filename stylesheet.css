@@ -1,0 +1,25 @@
+body{
+    background-color:tan ;
+}
+
+#headerSection{
+    padding: 10px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+}
+#dropbox{
+    padding: 15px;
+    border-radius: 5px;
+    width:20%;
+
+}
+
+#login{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: blue;
+    color: whitesmoke;
+}
